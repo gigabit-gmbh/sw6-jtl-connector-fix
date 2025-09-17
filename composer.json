@@ -1,0 +1,31 @@
+{
+    "name": "gigabit/sw6-jtl-connector-fix",
+    "description": "Fixes JTL incompatibility with Shopware 6.7",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "keywords": ["shopware", "plugin", "jtl", "connector"],
+    "authors": [
+        {
+            "name": "GIGABIT"
+        }
+    ],
+    "require": {
+        "shopware/core": "^6.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gigabit\\JtlConnectorFix\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Gigabit\\JtlConnectorFix\\JtlConnectorFix",
+        "label": {
+            "de-DE": "JTL Connector Fix für Shopware 6.7",
+            "en-GB": "JTL Connector Fix for Shopware 6.7"
+        },
+        "description": {
+            "de-DE": "Behebt JTL-Inkompatibilitäten mit Shopware 6.7",
+            "en-GB": "Fixes JTL incompatibilities with Shopware 6.7"
+        }
+    }
+}
