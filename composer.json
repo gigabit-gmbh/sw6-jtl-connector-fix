@@ -1,0 +1,58 @@
+{
+    "name": "gigabit-gmbh/sw6-jtl-connector-fix",
+    "description": "Fix for JTL Connector missing association on product detail request",
+    "keywords": [
+        "shopware",
+        "gigabit",
+        "jtl",
+        "connector"
+    ],
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GIGABIT IO GmbH & Co KG",
+            "homepage": "https://www.gigabit.de",
+            "role": "Manufacturer"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "GigabitIo\\JtlConnectorFix\\GigabitIoJtlConnectorFix",
+        "copyright": "(c) by GIGABIT IO GmbH & Co KG",
+        "label": {
+            "de-DE": "JTl Connector Fix für SW 6.7",
+            "en-GB": "JTl Connector Fix for SW 6.7"
+        },
+        "description": {
+            "de-DE": "Fixt das Problem, dass der JTL Connector auf der Product-Detail Route keine Steuern in der response erhält, da es nicht in den Associations enthalten ist.",
+            "en-GB": "Fix the problem that the JTL Connector does not receive taxes in the response on the product detail route, because they are not included in the associations."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.gigabit.de",
+            "en-GB": "https://www.gigabit.de"
+        },
+        "supportLink": {
+            "de-DE": "https://www.gigabit.de",
+            "en-GB": "https://www.gigabit.de"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "GigabitIo\\JtlConnectorFix\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GigabitIo\\JtlConnectorFix\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}
