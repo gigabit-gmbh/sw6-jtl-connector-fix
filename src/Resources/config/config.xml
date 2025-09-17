@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Base-Configuration</title>
+
+        <input-field type="text">
+            <name>jtlConnectorIps</name>
+            <defaultValue>88.84.141.4</defaultValue>
+            <label>JTL-Connector IP(s) (Setting currently not active)</label>
+            <label lang="de-DE">JTL-Connector IP(s) (Setting derzeit nicht aktiv)</label>
+            <helpText>IPs of the connectors so that the rule matches (comma-separated if multiple)</helpText>
+            <helpText lang="de-DE">IPs der Connectoren, damit die Regel matched (Kommagetrennt, falls mehrere)</helpText>
+        </input-field>
+    </card>
+
+</config>
