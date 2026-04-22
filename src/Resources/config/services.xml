@@ -8,5 +8,11 @@
         <service id="Shopware\Core\Framework\Api\Controller\ApiController"
                  class="GigabitIo\JtlConnectorFix\Api\ApiControllerOverride"
                  autowire="true" autoconfigure="true" public="true"/>
+        <service id="Shopware\Core\Framework\Api\Controller\SyncController"
+                 class="GigabitIo\JtlConnectorFix\Api\SyncControllerOverride"
+                 autowire="true" autoconfigure="true" public="true">
+            <argument type="service" id="Shopware\Core\Framework\Api\Sync\SyncService"/>
+            <argument type="service" id="serializer"/>
+        </service>
     </services>
 </container>
