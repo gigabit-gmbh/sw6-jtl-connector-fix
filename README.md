@@ -4,7 +4,7 @@ This Shopware 6 plugin fixes JTL Connector incompatibility issues with Shopware 
 
 ## Requirements
 
-- Shopware 6.7.0 or higher
+- Shopware 6.7.9 or higher
 
 ## Installation
 

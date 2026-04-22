@@ -1,6 +1,6 @@
 {
     "name": "gigabit-gmbh/sw6-jtl-connector-fix",
-    "description": "Fix for JTL Connector missing association on product detail request",
+    "description": "Different fixes for JTL Connector missing data on latest SW6 Versions",
     "keywords": [
         "shopware",
         "gigabit",
@@ -8,7 +8,7 @@
         "connector"
     ],
     "type": "shopware-platform-plugin",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "shopware/core": "~6.7.0"
+        "shopware/core": "~6.7.9"
     },
     "extra": {
         "shopware-plugin-class": "GigabitIo\\JtlConnectorFix\\GigabitIoJtlConnectorFix",
@@ -28,8 +28,8 @@
             "en-GB": "JTl Connector Fix for SW 6.7"
         },
         "description": {
-            "de-DE": "Fixt das Problem, dass der JTL Connector auf der Product-Detail Route keine Steuern in der response erhält, da es nicht in den Associations enthalten ist.",
-            "en-GB": "Fix the problem that the JTL Connector does not receive taxes in the response on the product detail route, because they are not included in the associations."
+            "de-DE": "Fixes several issues that appear on newer SW6 versions, while JTL Connector isn´t updated.",
+            "en-GB": "Different fixes for JTL Connector missing data on latest SW6 Versions."
         },
         "manufacturerLink": {
             "de-DE": "https://www.gigabit.de",
